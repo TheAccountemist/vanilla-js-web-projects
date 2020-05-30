@@ -10,16 +10,27 @@
   
   <link rel="stylesheet" href="style.css">
 
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Data table references  -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+  
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
+
+  
 </head>
 <body>
   
 <img src="img/money.png" alt="" class="money-img">
 <h1> Exchange Rate Calculator</h1>
+<p id="date"></p>
 <p>Choose the currency and the amounts to get the exchange rate.</p>
 <div class="container">
   <div class="currency">
     <select id="currency-one">
-      <option value="AED">AED</option>
+      <!-- <option value="AED">AED</option>
       <option value="ARS">ARS</option>
       <option value="AUD">AUD</option>
       <option value="BGN">BGN</option>
@@ -70,7 +81,7 @@
       <option value="USD" selected>USD</option>
       <option value="UYU">UYU</option>
       <option value="VND">VND</option>
-      <option value="ZAR">ZAR</option>
+      <option value="ZAR">ZAR</option> -->
     </select>  
 
     <input type="number" id="amount-one" placeholder="0" value="1">
@@ -89,7 +100,7 @@
 
   <div class="currency">
     <select id="currency-two">
-      <option value="AED">AED</option>
+      <!-- <option value="AED">AED</option>
       <option value="ARS">ARS</option>
       <option value="AUD">AUD</option>
       <option value="BGN">BGN</option>
@@ -140,24 +151,34 @@
       <option value="USD">USD</option>
       <option value="UYU">UYU</option>
       <option value="VND">VND</option>
-      <option value="ZAR">ZAR</option>
+      <option value="ZAR">ZAR</option> -->
     </select>  
 
     <input type="number" id="amount-two" placeholder="0" value="">
   </div>
 
+</div>
 
+<div class="divider"><hr></div>
+
+<!-- Table to be created via jQuery DataTables -->
+<div id="table-container">
+  <table id="table_id" class="display"> 
+  </table>
 </div>
 
 
 
+  <section class="footer">
+    <p class="footer-info">This data presented above is sourced from the 
+      <a href="https://api.exchangerate-api.com/v4/latest/usd" target="_blank">Exchange-Rate API</a>
+    </p>
 
-
-
-  
-
+  </section>
 
 <script src="script.js"></script>
+
+
 </body>
 </html>
 
