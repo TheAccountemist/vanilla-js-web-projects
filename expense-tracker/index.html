@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Expense Tracker</h2>
+
+    <div class="balance">
+      <h3 id="balance">YOUR BALANCE:
+        <span id="balance-amt">$150.00</span></h3>
+    </div>
+
+    <div class="dashboard">
+      <div class="dash-item" id="income">
+        <h4>INCOME</h4>
+        <h3 id="income-amt">$300.00</h3>
+      </div>
+      <div><hr></div>
+      <div class="dash-item" id="expense">
+        <h4>EXPENSE</h4>
+        <h3 id="expense-amt">$150.00</h3>
+      </div>
+    </div>
+
+    <div class="section-container" id="history">
+      <div class="section-header">
+        <h4>History</h4>
+        <div><hr></div>  
+      </div>
+      <div class="history-content">
+        <div class="transaction">
+          <p class="description">Camera</p>
+          <p class="amount">-100</p>
+        </div>
+        <div class="transaction">
+          <p class="description">Cash</p>
+          <p class="amount">+300</p>
+        </div>  
+      </div>
+
+    </div>
+
+    <div class="section-container">
+      <div class="section-header">
+        <h4>Add new transaction</h4>
+        <div><hr></div>  
+      </div>
+      <form id="form-new-txn" class="form-new-txn">
+        <label class="txn-label-desc" id="txn-label-desc">Description</label>
+        <input type="text" id="txn-input-desc" class="txn-input" placeholder="Enter description..">
+
+        <label class="txn-label-desc" id="txn-label-amt">Amount (Income +/Expense -)</label>
+        <input type="text" id="txn-input-amt" class="txn-input" placeholder="Enter amount..">
+        <button class="submit" id="submit" type="submit">Add Transaction</button>
+      </form>
+    </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

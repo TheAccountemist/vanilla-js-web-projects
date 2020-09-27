@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+  --primary-color:#f4f4f4
+}
+
+*{box-sizing: border-box;}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--primary-color);
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.balance{
+  width: 40%;
+}
+
+.balance h3{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+
+#balance-amt{
+  width: 100%;
+}
+
+.balance h3 span{
+  padding-top: 2px;
+  font-size: 2rem;
+}
+
+.dashboard{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border: 1px #f1f1f1;
+  text-align: center;  
+  box-shadow: -1px 2px 1px lightgray;
+  
+
+}
+
+.dashboard hr{
+  position: relative;
+  color: #999;
+  height: 80px;
+  margin: 20px 0;
+}
+/* .dashboard .dash-item{
+  border: 1px #f1f1f1 solid;
+} */
+
+#income-amt{
+  color: green;
+}
+
+#expense-amt{
+  color: red;
+}
+
+.section-container{
+  width: 40%;
+  margin: 10px 0 40px 0;
+}
+
+.section-container hr{
+  border-color: #f4f4f4;
+  outline: 0;
+}
+
+.section-header{
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+.transaction{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0 10px 0 10px;
+  margin: 0 0 10px 0;
+  border-right: 5px solid green;
+  box-shadow: 0 2px 5px lightgray;
+  /* height: 40px; */
+  align-items: center;
+  
+}
+
+
+
+
+
+
+
+
+
